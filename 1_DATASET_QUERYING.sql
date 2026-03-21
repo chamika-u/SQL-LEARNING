@@ -22,3 +22,5 @@ SELECT * FROM Products WHERE price>100 AND category_id=1; -- AND CONDITION
 SELECT * FROM Products WHERE price>100 OR category_id=1; --OR CONDITION
 SELECT * FROM Products WHERE price>100 OR category_id=1 OR category_id=2 ORDER BY product_id; --OR CONDITION
 
+--CHALLENGE
+SELECT * FROM Customer WHERE city='New York' OR city='NYC' ORDER BY customer_name;
