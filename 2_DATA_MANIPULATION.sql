@@ -15,3 +15,12 @@ SELECT * FROM Products;
 DELETE FROM Products WHERE  product_id=9;
 SELECT * FROM Products;
 
+-- Delete tables
+DELETE FROM PUBLIC."Fruit Juice"; -- DELETE Entire Table Data (DELETE line by line making execution slower). 
+SELECT * FROM PUBLIC."Fruit Juice";
+TRUNCATE PUBLIC."Fruit Juice"; -- DELETE Entire Table Data (DELETE whole table dara at once making execution much faster). Better to use in tables with millions of records. 
+
+--Delete the whole table including the table structure 
+DROP table PUBLIC."Fruit Juice";
+
+
