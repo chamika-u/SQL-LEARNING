@@ -23,4 +23,3 @@ TRUNCATE PUBLIC."Fruit Juice"; -- DELETE Entire Table Data (DELETE whole table d
 --Delete the whole table including the table structure 
 DROP table PUBLIC."Fruit Juice";
 
-
