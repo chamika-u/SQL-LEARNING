@@ -20,3 +20,5 @@ SELECT * FROM Products WHERE price>100 ORDER BY price;
 
 SELECT * FROM Products WHERE price>100 AND category_id=1; -- AND CONDITION
 SELECT * FROM Products WHERE price>100 OR category_id=1; --OR CONDITION
+SELECT * FROM Products WHERE price>100 OR category_id=1 OR category_id=2 ORDER BY product_id; --OR CONDITION
+
