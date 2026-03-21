@@ -1,3 +1,4 @@
+-- Inserting new values
 INSERT INTO Products (name, price, description, tags, category_id,Supplier)
 VALUES
     ('Ipad', 100, 'High-performance ipad for professionals', 'electronics, portable, tech', 1, 'SupplierA'),
@@ -5,3 +6,12 @@ VALUES
 
 SELECT * FROM Products;
 SELECT * FROM Products WHERE price>50 AND category_id=1 AND supplier='SupplierB' ORDER BY product_id;
+
+-- Update values
+UPDATE Products SET price=500 WHERE product_id=6;
+SELECT * FROM Products;
+
+-- Delete values
+DELETE FROM Products WHERE  product_id=9;
+SELECT * FROM Products;
+
