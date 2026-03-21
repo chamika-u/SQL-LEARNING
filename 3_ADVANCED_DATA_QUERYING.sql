@@ -16,9 +16,11 @@ SELECT customer_name, name, total_quantity FROM customer c FULL OUTER JOIN order
 products p ON p.product_id = o.product_id;
 
 -- UNION (Combining 2 Queries at once)
-select name from products where category_id =1
-
+SELECT name FROM products WHERE category_id =1
 UNION
+SELECT name FROM products p INNER JOIN orders o ON o.product_id = p.product_id WHERE o.total_quantity > 2;
 
-select name from products p inner join orders o on o.product_id = p.product_id where o.total_quantity > 2
 
+SELECT name FROM products WHERE category_id =1
+UNION ALL 
+SELECT name FROM products p INNER JOIN orders o ON o.product_id = p.product_id WHERE o.total_quantity > 2;
