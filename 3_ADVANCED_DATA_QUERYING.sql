@@ -11,5 +11,3 @@ SELECT name, total_quantity FROM orders o RIGHT JOIN products p ON p.product_id 
 
 -- FULL OUTER
 SELECT name, description, total_amount FROM Orders o FULL OUTER JOIN Products p ON p.product_id=o.product_id;
-
-SELECT * FROM Orders;
