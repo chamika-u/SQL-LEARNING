@@ -16,6 +16,7 @@ SELECT * FROM Customer ORDER BY customer_name DESC;
 SELECT * FROM Products ORDER BY price, name;
 SELECT * FROM Products ORDER BY price, name DESC;
 SELECT * FROM Products WHERE price<100 ORDER BY price;
-SELECT * FROM Products WHERE price>100 ORDER BY price;
+SELECT * FROM Products WHERE price>100 ORDER BY price; 
 
-
+SELECT * FROM Products WHERE price>100 AND category_id=1; -- AND CONDITION
+SELECT * FROM Products WHERE price>100 OR category_id=1; --OR CONDITION
