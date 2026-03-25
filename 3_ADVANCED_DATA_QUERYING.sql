@@ -39,3 +39,13 @@ FROM products;
 SELECT city, COUNT(customer_id) FROM customer GROUP BY city;
 SELECT category_id, COUNT(product_id) FROM products GROUP BY category_id;
 
+-- HAVING CLAUSE
+
+SELECT city, COUNT(*) FROM customer GROUP BY city HAVING COUNT(*)>10; 
+/*
+
+HAVING clause always comes after GROUP BY and you can only use WHERE clause before the GROUP BY clause. 
+If group by already done, you can't use HAVING clause after it. 
+Both WHERE and HAVING use to filter the data.
+
+*/
