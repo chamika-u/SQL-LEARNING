@@ -57,3 +57,6 @@ SELECT c.category_name, c.category_id FROM categories c JOIN products p ON c.cat
 c.category_id HAVING COUNT(p.category_id)>1; --Filtering from above query
 
 -- This query retrieves the name and ID of any category that has more than one product assigned to it.
+
+SELECT c.category_name, c.category_id, COUNT(product_id) FROM categories c JOIN products p ON c.category_id = p.category_id 
+GROUP BY c.category_id HAVING COUNT(p.category_id)>1;
