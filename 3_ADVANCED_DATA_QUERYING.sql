@@ -34,5 +34,7 @@ CASE
 	END AS product_type
 FROM products;
 
+-- GROUP BY
 
-
+SELECT city, COUNT(customer_id) FROM customer GROUP BY city;
+SELECT category_id, COUNT(product_id) FROM products GROUP BY category_id;
