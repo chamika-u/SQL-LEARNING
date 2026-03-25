@@ -20,4 +20,3 @@ SELECT AVG(total_amount) AS avg_amount FROM orders;
 SELECT STDDEV(total_amount) AS std_amount FROM orders;
 
 
-
