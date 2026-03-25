@@ -49,3 +49,11 @@ If group by already done, you can't use HAVING clause after it.
 Both WHERE and HAVING use to filter the data.
 
 */
+
+SELECT c.category_name, c.category_id FROM categories c JOIN products p ON c.category_id = p.category_id GROUP BY 
+c.category_id;
+
+SELECT c.category_name, c.category_id FROM categories c JOIN products p ON c.category_id = p.category_id GROUP BY 
+c.category_id HAVING COUNT(p.category_id)>1; --Filtering from above query
+
+-- This query retrieves the name and ID of any category that has more than one product assigned to it.
