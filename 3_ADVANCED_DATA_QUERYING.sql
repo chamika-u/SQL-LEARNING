@@ -26,7 +26,7 @@ UNION ALL
 SELECT name FROM products p INNER JOIN orders o ON o.product_id = p.product_id WHERE o.total_quantity > 2;
 
 -- CASES
-SELECT name, description,
+SELECT name, description, price,
 CASE
 	WHEN price<100 THEN 'Cheap'
 	WHEN price>100 AND price<500 THEN 'Affordable'
