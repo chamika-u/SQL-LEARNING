@@ -46,5 +46,7 @@ SELECT CURRENT_TIMESTAMP AT Time Zone 'America/New_York'; --Convert current time
 
 --String Functions
 
-SELECT city || address FROM customer; --Select adresss
-SELECT city ||'---'|| address FROM customer; --Separate city from the address by ---
+SELECT city || address FROM customer; --Select city and adresss together
+SELECT city ||'---'|| address FROM customer; --Separate city from the address by '---'
+SELECT CONCAT(city,address) FROM customer; --Select city and adresss together
+SELECT CONCAT_WS('--',city,address) FROM customer; --Separate city from the address by CONCAT_WS('--')
