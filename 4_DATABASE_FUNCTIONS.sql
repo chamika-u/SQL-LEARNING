@@ -53,3 +53,6 @@ SELECT CONCAT_WS('--',city,address) FROM customer; --Separate city from the addr
 
 SELECT TRIM('    HELLO    '); --Remove extra spaces from left and right
 SELECT TRIM('X' FROM 'XXXHELLOXXX'); --Remove charachters from a string
+SELECT LTRIM('    HELLO    '); --Remove only from left hand side
+SELECT RTRIM('    HELLO    '); --Remove only from right hand side
+
