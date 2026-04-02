@@ -42,5 +42,9 @@ SELECT LOCALTIMESTAMP; --Display local date and time
 SELECT EXTRACT(HOUR FROM order_timestamp) FROM Orders; --Extract only the hour
 SELECT EXTRACT(MINUTE FROM order_timestamp) FROM Orders; --Extract only the minute
 SELECT EXTRACT(SECOND FROM order_timestamp) FROM Orders; --Extract only the seconds
-SELECT order_timestamp from orders;
-SELECT CURRENT_TIMESTAMP AT Time Zone 'America/New_York';
+SELECT CURRENT_TIMESTAMP AT Time Zone 'America/New_York'; --Convert current timestamp to region time zones
+
+--String Functions
+
+SELECT city || address FROM customer; --Select adresss
+SELECT city ||'---'|| address FROM customer; --Separate city from the address by ---
