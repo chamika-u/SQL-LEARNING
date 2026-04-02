@@ -19,4 +19,8 @@ SELECT DATE_PART('DAY', CURRENT_DATE); --Select only the day from current date
 SELECT DATE_PART('MONTH', CURRENT_DATE); --Select only the month from current date
 SELECT DATE_PART('YEAR', CURRENT_DATE); --Select only the year from current date
 
+SELECT DATE_TRUNC('MONTH', CURRENT_DATE); --Select truncate date to month
+SELECT DATE_TRUNC('YEAR', CURRENT_DATE); --Select truncate date to year
+
+
 
