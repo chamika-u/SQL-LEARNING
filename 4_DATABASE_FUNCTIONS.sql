@@ -60,3 +60,9 @@ SELECT TRIM('X' FROM 'XXXHELLOXXX'); --Remove charachters from a string
 SELECT UPPER(customer_name) FROM customer; --UPPERCASE
 SELECT LOWER(customer_name) FROM customer; --LOWERCASE
 SELECT INITCAP(customer_name) FROM customer; --Only the first charachter of the word will capitalize
+
+SELECT SUBSTRING('Hello From Chamika' FROM 1 FOR 5); --Select substring/word starting the position of 1 to 5 charachters
+SELECT SUBSTRING('Hello From Chamika' FROM 7 FOR 5); --Select substring/word starting the position of 7 to 5 charachters
+SELECT LEFT('Hello From Chamika',5); --Select 5 charachters from left handside
+SELECT RIGHT('Hello From Chamika',7); --Select 7 charachters from left handside
+SELECT POSITION('Chamika' IN 'Hello From Chamika'); --Select the position of given string if exsits in given string phase
