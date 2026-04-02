@@ -66,3 +66,5 @@ SELECT SUBSTRING('Hello From Chamika' FROM 7 FOR 5); --Select substring/word sta
 SELECT LEFT('Hello From Chamika',5); --Select 5 charachters from left handside
 SELECT RIGHT('Hello From Chamika',7); --Select 7 charachters from left handside
 SELECT POSITION('Chamika' IN 'Hello From Chamika'); --Select the position of given string if exsits in given string phase
+SELECT POSITION('Alice' IN 'Hello From Chamika'); --In here it gives 0 since Alice is not in the given string phase
+
