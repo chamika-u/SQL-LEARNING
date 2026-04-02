@@ -52,3 +52,4 @@ SELECT CONCAT(city,address) FROM customer; --Select city and adresss together
 SELECT CONCAT_WS('--',city,address) FROM customer; --Separate city from the address by CONCAT_WS('--')
 
 SELECT TRIM('    HELLO    '); --Remove extra spaces from left and right
+SELECT TRIM('X' FROM 'XXXHELLOXXX'); --Remove charachters from a string
