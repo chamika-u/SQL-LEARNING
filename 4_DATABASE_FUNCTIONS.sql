@@ -14,6 +14,9 @@ SELECT CURRENT_DATE; -- Seleclt current date
 SELECT EXTRACT(DAY FROM CURRENT_DATE); --Select only the day from current date
 SELECT EXTRACT(MONTH FROM CURRENT_DATE); --Select only the month from current date
 SELECT EXTRACT(YEAR FROM CURRENT_DATE); --Select only the year from current date
+SELECT DATE_TRUNC('Day', order_timestamp) FROM Orders;
+SELECT AGE(order_timestamp) FROM Orders;
+SELECT AGE(delivery_timestamp, order_timestamp) FROM Orders;
 
 SELECT DATE_PART('DAY', CURRENT_DATE); --Select only the day from current date
 SELECT DATE_PART('MONTH', CURRENT_DATE); --Select only the month from current date
@@ -31,4 +34,12 @@ SELECT TO_CHAR(CURRENT_DATE, 'DD/MM/YYYY'); --Converting char type to defined da
 
 --Time Functions
 
-SELECT CURRENT_TIME;
+SELECT CURRENT_TIME; --Display current time
+SELECT CURRENT_TIMESTAMP; --Display current time and date
+SELECT LOCALTIME; --Display local time
+SELECT LOCALTIMESTAMP; --Display local date and time
+
+SELECT EXTRACT(HOUR FROM order_timestamp) FROM Orders; --Extract only the hour
+SELECT EXTRACT(MINUTE FROM order_timestamp) FROM Orders; --Extract only the minute
+SELECT EXTRACT(SECOND FROM order_timestamp) FROM Orders; --Extract only the seconds
+SELECT order_timestamp from orders;
