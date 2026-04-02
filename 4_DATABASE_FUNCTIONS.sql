@@ -23,5 +23,7 @@ SELECT DATE_TRUNC('DAY', CURRENT_DATE); --Select truncate date to day
 SELECT DATE_TRUNC('MONTH', CURRENT_DATE); --Select truncate date to month
 SELECT DATE_TRUNC('YEAR', CURRENT_DATE); --Select truncate date to year
 
+SELECT AGE(TIMESTAMP '2024-10-01'); --Display gap between given timestamp (date) and current date
+
 
 
