@@ -15,3 +15,8 @@ SELECT EXTRACT(DAY FROM CURRENT_DATE); --Select only the day from current date
 SELECT EXTRACT(MONTH FROM CURRENT_DATE); --Select only the month from current date
 SELECT EXTRACT(YEAR FROM CURRENT_DATE); --Select only the year from current date
 
+SELECT DATE_PART('DAY', CURRENT_DATE); --Select only the day from current date
+SELECT DATE_PART('MONTH', CURRENT_DATE); --Select only the month from current date
+SELECT DATE_PART('YEAR', CURRENT_DATE); --Select only the year from current date
+
+
