@@ -56,3 +56,7 @@ SELECT LTRIM('    HELLO    '); --Remove only from left hand side
 SELECT RTRIM('    HELLO    '); --Remove only from right hand side
 SELECT BTRIM('    HELLO    '); --Remove from bnoth sides same as TRIM functions
 SELECT TRIM('X' FROM 'XXXHELLOXXX'); --Remove charachters from a string
+
+SELECT UPPER(customer_name) FROM customer; --UPPERCASE
+SELECT LOWER(customer_name) FROM customer; --LOWERCASE
+SELECT INITCAP(customer_name) FROM customer; --Only the first charachter of the word will capitalize
