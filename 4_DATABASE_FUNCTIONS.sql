@@ -69,3 +69,5 @@ SELECT POSITION('Chamika' IN 'Hello From Chamika'); --Select the position of giv
 SELECT POSITION('Alice' IN 'Hello From Chamika'); --In here it gives 0 since Alice is not in the given string phrase
 SELECT LENGTH('Hello From Chamika'); --Select numbers of charachters in given strin phrase.
 
+--Challenge
+SELECT INITCAP(tags) FROM Products;
