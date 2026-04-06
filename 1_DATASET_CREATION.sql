@@ -74,7 +74,3 @@ VALUES
     (1, 4, 2, 50.00, 4.0, 1.8, 1.5, '2023-04-05 12:15:00', '2023-04-07 18:20:00');
 	
 	
-select * from categories
-select * from Orders
-select * from Customer
-select * from Products
