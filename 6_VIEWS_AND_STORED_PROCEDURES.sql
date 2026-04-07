@@ -8,3 +8,5 @@ FROM Orders GROUP BY customer_id;
 
 --Display View
 SELECT * FROM customer_order_summery;
+
+/*Using view hide complexity of the query and simplifies for people who can't handle large queries in SQL*/
