@@ -22,6 +22,9 @@ END;
 $$;
 
 CALL add_category(6, 'Fashion'); -- Calls the add_category procedure with specific values (6 and 'Fashion') to add a new category to the categories table.
+
 SELECT * FROM categories; -- Displays all records from the categories table to verify that the new category has been added successfully.
+
+DROP PROCEDURE add_category; -- Removes the add_category procedure from the database, cleaning up after its use.
 
 /*These procedures works like a functions in object oriented programming languages such as Java*/
