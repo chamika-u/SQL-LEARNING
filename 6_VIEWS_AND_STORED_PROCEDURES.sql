@@ -28,3 +28,11 @@ SELECT * FROM categories; -- Displays all records from the categories table to v
 DROP PROCEDURE add_category; -- Removes the add_category procedure from the database, cleaning up after its use.
 
 /*These procedures works like a functions in object oriented programming languages such as Java*/
+
+--Challenge
+CREATE VIEW products_category AS
+SELECT p.name AS product_name, c.category_name FROM Products p JOIN categories c ON p.category_id=c.category_id; 
+-- Creates a new view named products_category that combines data from the Products and categories tables. It selects the product name from the Products table and the category name from the categories table, joining them based on the category_id.
+
+SELECT * FROM products_category; 
+-- Displays all records from the products_category view, showing the product names along with their corresponding category names.
