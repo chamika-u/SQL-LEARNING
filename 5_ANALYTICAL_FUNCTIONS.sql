@@ -28,3 +28,13 @@ LEAD(order_timestamp, 1) OVER (PARTITION BY customer_id ORDER BY order_timestamp
 SELECT customer_id, order_id, total_amount, order_timestamp,
 SUM(total_amount) OVER (PARTITION BY customer_id ORDER BY order_timestamp ASC) AS running_total FROM Orders;
 
+-- Shows cumulative quantity sold per product over time.
+SELECT product_id,  order_timestamp, total_quantity, 
+SUM(total_quantity) OVER (PARTITION BY product_id ORDER BY order_timestamp ASC) AS running_quantity FROM Orders;
+
+--AVG() FUNCTION
+-- Calculating moving average
+SELECT order_id, customer_id, order_timestamp, total_amount,
+AVG(total_amount) OVER (PARTITION BY customer_id ORDER BY order_timestamp ROWS BETWEEN 1 PRECEDING AND CURRENT ROW) 
+AS moving_avg FROM Orders;
+
