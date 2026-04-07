@@ -38,3 +38,6 @@ SELECT order_id, customer_id, order_timestamp, total_amount,
 AVG(total_amount) OVER (PARTITION BY customer_id ORDER BY order_timestamp ROWS BETWEEN 1 PRECEDING AND CURRENT ROW) 
 AS moving_avg FROM Orders;
 
+--CHALLENGE
+SELECT product_id, order_timestamp, total_quantity, 
+SUM(total_quantity) OVER (PARTITION BY product_id ORDER BY order_timestamp) AS cumalative_product_sales FROM Orders;
