@@ -13,15 +13,15 @@ SELECT * FROM customer_order_summery;
 
 --Creating Procedures
 CREATE PROCEDURE add_category(cat_id int, cat_name varchar)
-LANGUAGE plpgsql
+LANGUAGE plpgsql --specifies that the procedure is written in PL/pgSQL, a procedural language for PostgreSQL.
 AS
 $$
 BEGIN
-	INSERT INTO categories VALUES(cat_id, cat_name);
+	INSERT INTO categories VALUES(cat_id, cat_name); -- Inserts a new category into the categories table using the provided parameters cat_id and cat_name.
 END;
 $$;
 
-CALL add_category(6, 'Fashion');
-SELECT * FROM categories;
+CALL add_category(6, 'Fashion'); -- Calls the add_category procedure with specific values (6 and 'Fashion') to add a new category to the categories table.
+SELECT * FROM categories; -- Displays all records from the categories table to verify that the new category has been added successfully.
 
 /*These procedures works like a functions in object oriented programming languages such as Java*/
