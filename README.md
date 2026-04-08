@@ -22,6 +22,7 @@ This repository is a structured learning path that progresses from schema creati
 | 6 | `4_DATABASE_FUNCTIONS.sql` | Math functions (`ABS`, `ROUND`, `SQRT`) and date functions (`CURRENT_DATE`, `EXTRACT`, `DATE_PART`) |
 | 7 | `5_ANALYTICAL_FUNCTIONS.sql` | Window functions: `RANK`, `DENSE_RANK`, `ROW_NUMBER`, `LAG`, `LEAD`, running totals, and moving averages with `OVER` / `PARTITION BY` |
 | 8 | `6_VIEWS_AND_STORED_PROCEDURES.sql` | Creating and querying views, and writing stored procedures to encapsulate reusable logic |
+| 9 | `7_INDEXES_AND_PERFORMANCE.sql` | Creating standard, unique, and composite indexes, analyzing query performance with `EXPLAIN ANALYZE`, and inspecting index usage via `pg_stat_user_indexes` |
 
 ## Topics Covered
 
@@ -33,6 +34,7 @@ This repository is a structured learning path that progresses from schema creati
 - Built-in mathematical and date functions
 - Analytical (window) functions for ranking and running calculations
 - Views and stored procedures for reusable, simplified queries
+- Indexes for performance optimization and query analysis
 
 ## Getting Started
 
@@ -47,6 +49,7 @@ This repository is a structured learning path that progresses from schema creati
    6. `4_DATABASE_FUNCTIONS.sql`
    7. `5_ANALYTICAL_FUNCTIONS.sql`
    8. `6_VIEWS_AND_STORED_PROCEDURES.sql`
+   9. `7_INDEXES_AND_PERFORMANCE.sql`
 
 ## Notes
 
