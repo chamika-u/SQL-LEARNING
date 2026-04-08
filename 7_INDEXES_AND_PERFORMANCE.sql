@@ -19,3 +19,7 @@ SELECT * FROM orders WHERE customer_id=1 order by order_timestamp;
 
 CREATE INDEX idx_cust ON orders(customer_id, order_timestamp);
 -- After this index was created above query works faster.
+
+-- Challenge
+CREATE INDEX idx_timestamp ON orders(order_timestamp); -- After creating this index, following query will run faster
+SELECT order_timestamp FROM orders WHERE customer_id=1;
