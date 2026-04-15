@@ -17,4 +17,4 @@ CREATE ROLE chamika4 WITH login PASSWORD 'chamika-u' CONNECTION LIMIT 10; -- Giv
 
 CREATE ROLE chamika5 WITH login PASSWORD 'chamika-u' IN ROLE chamika4; -- Giving access to the user with the same access as chamika4
 
-CREATE USER chamika6 WITH PASSWORD 'chamika-u';
+CREATE USER chamika6 WITH PASSWORD 'chamika-u'; -- creating an user with the same access as chamika4
