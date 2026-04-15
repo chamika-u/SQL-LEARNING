@@ -11,3 +11,5 @@ CREATE ROLE chamika1 WITH login PASSWORD 'chamika-u' createdb; -- Giving access 
 
 CREATE ROLE chamika2 WITH login PASSWORD 'chamika-u' createrole; -- Giving access to assign rules to others
 
+CREATE ROLE chamika3 WITH login PASSWORD 'chamika-u' VALID UNTIL '2026-09-29'; -- Creating users with deadlines
+
