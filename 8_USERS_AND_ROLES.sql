@@ -13,3 +13,5 @@ CREATE ROLE chamika2 WITH login PASSWORD 'chamika-u' createrole; -- Giving acces
 
 CREATE ROLE chamika3 WITH login PASSWORD 'chamika-u' VALID UNTIL '2026-09-29'; -- Giving access to the user until a specific date
 
+CREATE ROLE chamika4 WITH login PASSWORD 'chamika0+-u' CONNECTION LIMIT 10; -- Giving access to the user with a limit of 10 connections
+
