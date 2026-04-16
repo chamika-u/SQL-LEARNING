@@ -39,3 +39,4 @@ REVOKE DELETE, INSERT ON customer FROM chamika1; -- Revoking delete and insert p
 CREATE ROLE sales_team; -- Creating a role for the sales team
 CREATE ROLE admins; -- Creating a role for the admins
 GRANT SELECT ON ALL TABLES IN SCHEMA PUBLIC TO sales_team; -- Granting select permission on all tables in public schema to sales_team
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA PUBLIC TO admins; -- Granting all permissions on all tables in public schema to admins
