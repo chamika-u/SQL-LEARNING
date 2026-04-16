@@ -40,3 +40,4 @@ CREATE ROLE sales_team; -- Creating a role for the sales team
 CREATE ROLE admins; -- Creating a role for the admins
 GRANT SELECT ON ALL TABLES IN SCHEMA PUBLIC TO sales_team; -- Granting select permission on all tables in public schema to sales_team
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA PUBLIC TO admins; -- Granting all permissions on all tables in public schema to admins
+CREATE ROLE sales_manager IN ROLE sales_team; -- Creating a role for the sales manager and giving it the same permissions as the sales team
