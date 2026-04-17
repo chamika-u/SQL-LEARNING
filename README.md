@@ -23,6 +23,8 @@ This repository is a structured learning path that progresses from schema creati
 | 7 | `5_ANALYTICAL_FUNCTIONS.sql` | Window functions: `RANK`, `DENSE_RANK`, `ROW_NUMBER`, `LAG`, `LEAD`, running totals, and moving averages with `OVER` / `PARTITION BY` |
 | 8 | `6_VIEWS_AND_STORED_PROCEDURES.sql` | Creating and querying views, and writing stored procedures to encapsulate reusable logic |
 | 9 | `7_INDEXES_AND_PERFORMANCE.sql` | Creating standard, unique, and composite indexes, analyzing query performance with `EXPLAIN ANALYZE`, and inspecting index usage via `pg_stat_user_indexes` |
+| 10 | `8_USERS_AND_ROLES.sql` | Creating roles and users with `CREATE ROLE` / `CREATE USER`, assigning privileges (`superuser`, `createdb`, `createrole`, connection limits, expiry), granting and revoking permissions with `GRANT` / `REVOKE`, and managing access via role hierarchies |
+| 11 | `9_NULL_VALUES.sql` | Handling `NULL` with `IS NULL` / `IS NOT NULL` filters and understanding `NULL` behaviour in boolean expressions |
 
 ## Topics Covered
 
@@ -35,6 +37,8 @@ This repository is a structured learning path that progresses from schema creati
 - Analytical (window) functions for ranking and running calculations
 - Views and stored procedures for reusable, simplified queries
 - Indexes for performance optimization and query analysis
+- User and role management with fine-grained permission control
+- Handling `NULL` values and understanding `NULL` in expressions
 
 ## Getting Started
 
@@ -50,6 +54,8 @@ This repository is a structured learning path that progresses from schema creati
    7. `5_ANALYTICAL_FUNCTIONS.sql`
    8. `6_VIEWS_AND_STORED_PROCEDURES.sql`
    9. `7_INDEXES_AND_PERFORMANCE.sql`
+   10. `8_USERS_AND_ROLES.sql`
+   11. `9_NULL_VALUES.sql`
 
 ## Notes
 
