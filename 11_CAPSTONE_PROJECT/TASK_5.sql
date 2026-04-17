@@ -14,3 +14,4 @@ GRANT SELECT ON Claims, Policies, Policy_Types TO ClaimsAnalyst;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON Claims, Policies, Policy_Types TO ClaimsManager;
 
+
