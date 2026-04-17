@@ -25,6 +25,7 @@ This repository is a structured learning path that progresses from schema creati
 | 9 | `7_INDEXES_AND_PERFORMANCE.sql` | Creating standard, unique, and composite indexes, analyzing query performance with `EXPLAIN ANALYZE`, and inspecting index usage via `pg_stat_user_indexes` |
 | 10 | `8_USERS_AND_ROLES.sql` | Creating roles and users with `CREATE ROLE` / `CREATE USER`, assigning privileges (`superuser`, `createdb`, `createrole`, connection limits, expiry), granting and revoking permissions with `GRANT` / `REVOKE`, and managing access via role hierarchies |
 | 11 | `9_NULL_VALUES.sql` | Handling `NULL` with `IS NULL` / `IS NOT NULL` filters and understanding `NULL` behaviour in boolean expressions |
+| 12 | `10_REAL_WORLD_DEBUGGING.sql` | Real-world SQL debugging: identifying `NULL` values propagating through calculations, tracing the source across joined tables, and applying targeted fixes |
 
 ## Topics Covered
 
@@ -39,6 +40,7 @@ This repository is a structured learning path that progresses from schema creati
 - Indexes for performance optimization and query analysis
 - User and role management with fine-grained permission control
 - Handling `NULL` values and understanding `NULL` in expressions
+- Real-world debugging: tracing and fixing `NULL` propagation in queries
 
 ## Getting Started
 
@@ -56,6 +58,7 @@ This repository is a structured learning path that progresses from schema creati
    9. `7_INDEXES_AND_PERFORMANCE.sql`
    10. `8_USERS_AND_ROLES.sql`
    11. `9_NULL_VALUES.sql`
+   12. `10_REAL_WORLD_DEBUGGING.sql`
 
 ## Notes
 
