@@ -25,3 +25,24 @@ CREATE TABLE policy_types (
 	Description TEXT
 );
 
+-- This SQL script creates a table to store policy information, linking it to the customer and policy type tables.
+CREATE TABLE policies (
+	PolicyID SERIAL PRIMARY KEY,
+	CustomerID INT REFERENCES customer(CustomerID),
+	PolicyTypeID INT REFERENCES policy_types(PolicyTypeID),
+	PolicyStartDate DATE,
+	PolicyEndDate DATE,
+	Premium DECIMAL(10,2)
+);
+
+-- This SQL script creates a table to store claim information, linking it to the policies table.
+CREATE TABLE claims (
+	ClaimID SERIAL PRIMARY KEY,
+	PolicyID INT REFERENCES policies(PolicyID),
+	ClaimDate DATE,
+	ClaimAmount DECIMAL(10,2),
+	ClaimDescription TEXT,
+	ClaimStatus VARCHAR(50)
+);
+
+
