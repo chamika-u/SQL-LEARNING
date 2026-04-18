@@ -2,7 +2,7 @@
 
 Hands-on SQL practice scripts built with **PostgreSQL**.
 
-This repository is a structured learning path that progresses from schema creation through querying, data manipulation, aggregation, built-in functions, analytical (window) functions, and views with stored procedures.
+This repository is a structured learning path that progresses from schema creation through querying, data manipulation, aggregation, built-in functions, analytical (window) functions, views with stored procedures, indexes, user management, NULL handling, real-world debugging, and a capstone project that ties everything together.
 
 ## Purpose
 
@@ -10,7 +10,9 @@ This repository is a structured learning path that progresses from schema creati
 - Keep learning scripts organized for quick revision
 - Track progress while learning SQL step by step
 
-## Repository Files
+## Repository Structure
+
+### Core Learning Scripts
 
 | # | File | Topics Covered |
 |---|------|----------------|
@@ -27,6 +29,18 @@ This repository is a structured learning path that progresses from schema creati
 | 11 | `9_NULL_VALUES.sql` | Handling `NULL` with `IS NULL` / `IS NOT NULL` filters and understanding `NULL` behaviour in boolean expressions |
 | 12 | `10_REAL_WORLD_DEBUGGING.sql` | Real-world SQL debugging: identifying `NULL` values propagating through calculations, tracing the source across joined tables, and applying targeted fixes |
 
+### 11_CAPSTONE_PROJECT — Insurance Customer Database
+
+A self-contained project that applies all learned concepts to a realistic insurance domain using four tables: `customer`, `policy_types`, `policies`, and `claims`.
+
+| Task | File | Description |
+|------|------|-------------|
+| 1 | `TASK_1.sql` | **Schema creation** — design and create the `customer`, `policy_types`, `policies`, and `claims` tables with appropriate primary and foreign keys |
+| 2 | `TASK_2.sql` | **Data population** — insert realistic sample data covering multiple policy types (`Auto`, `Home`, `Life`, `Health`), customers, policies, and claims with varied statuses |
+| 3 | `TASK_3.sql` | **Analytical queries** — calculate total claims per policy type and use `DATE_TRUNC` to determine monthly claim frequency and average claim amount |
+| 4 | `TASK_4.sql` | **Performance optimization** — create an index on `ClaimDate` to speed up date-based filters and joins, with a discussion of index design principles |
+| 5 | `TASK_5.sql` | **Roles and permissions** — create `ClaimsAnalyst` (read-only on claims and policies) and `ClaimsManager` (full access to claims with policy update rights) roles |
+
 ## Topics Covered
 
 - Table creation with primary keys and foreign keys
@@ -41,12 +55,13 @@ This repository is a structured learning path that progresses from schema creati
 - User and role management with fine-grained permission control
 - Handling `NULL` values and understanding `NULL` in expressions
 - Real-world debugging: tracing and fixing `NULL` propagation in queries
+- End-to-end capstone project: schema design, data population, analytics, optimization, and security
 
 ## Getting Started
 
 1. Install [PostgreSQL](https://www.postgresql.org/download/).
 2. Create a new database (for example, `sql_learning`).
-3. Run the SQL files in the order listed below:
+3. Run the core learning scripts in order:
    1. `1_DATASET_CREATION.sql`
    2. `1_DATASET_QUERYING.sql`
    3. `2_DATA_MANIPULATION.sql`
@@ -59,6 +74,7 @@ This repository is a structured learning path that progresses from schema creati
    10. `8_USERS_AND_ROLES.sql`
    11. `9_NULL_VALUES.sql`
    12. `10_REAL_WORLD_DEBUGGING.sql`
+4. For the capstone project, create a fresh database (for example, `sql_capstone`) and run the files inside `11_CAPSTONE_PROJECT/` in order (`TASK_1.sql` → `TASK_5.sql`).
 
 ## Notes
 
